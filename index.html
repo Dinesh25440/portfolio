@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+#myBtn {
+    display: none;
+    position: relative;
+    bottom: 5px;
+    width:95%;
+    cursor: pointer;
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <title>Dinesh Kumar - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+</script>
+  </head>
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="Images/cloud.png" alt="cloud-img">
+      <h1>I'm Dinesh Kumar.</h1>
+      <h2>a programmer.</h2>
+      <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-img">
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img class="mydb" src="Images/My_Profile.png" alt="" height="200px">
+        <h2>Hello, Welcome to my Page.</h2>
+        <p class="intro">I'm Dinesh Kumar a Web Developer. I love Designing.</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="skill-image1" src="Images/checklist.png" alt="">
+          <h2>Design & Development</h2>
+          <p>I specialize in creating user interface that are very visually appealing, easy to use, and responsive. I have expertise in HTML, CSS.</p>
+        </div>
+        <div class="skill-row">
+          <img class="skill-image2" src="Images/python.png" alt="">
+          <h2>Python</h2>
+          <p>I'm passionate about coding and i have been learning python for a while now. I have strong foundation in python fundamentals, including data types,loops, functions and basic object-oriented programming concepts.</p>
+        </div>
+        <div class="skill-row">
+          <img class="skill-image1" src="Images/mysql.png" alt="MySQL-Image">
+          <h2>Database Management</h2>
+          <p>I'm beginner in MySQL  and eager to learn more about the possibilities it offers and its importance in building modern web applications. I have a strong understanding of the basic of MySQL, including creating and modifying tables, inserting and updating data, and writting basic SQL queries</p>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>If you also like programming.</h3>
+        <p class="contact-message">You also like coding Connect with me for further intersting facts about it.</p>
+        <a class="btn" href="mailto:dinesh.gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.instagram.com/">Instagram</a>
+      <p class="copyright">&copy; 2023 Dinesh Kumar.</p>
+      <a onclick="topFunction()" id="myBtn"><img src="Images/scroll-up.png" alt="scroll_up_image"></a>
+    </div>
+  </body>
+</html>
